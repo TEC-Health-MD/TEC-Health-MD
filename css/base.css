@@ -1,0 +1,401 @@
+/*==================================================
+  TEC-HEALTH Medical and Diagnostic Center
+  Base Stylesheet
+==================================================*/
+
+/*=========================
+  RESET
+=========================*/
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*=========================
+  HTML
+=========================*/
+
+html{
+    scroll-behavior:smooth;
+    font-size:16px;
+}
+
+/*=========================
+  BODY
+=========================*/
+
+body{
+
+    font-family:'Open Sans', sans-serif;
+
+    color:var(--text);
+
+    background:var(--white);
+
+    line-height:1.8;
+
+    overflow-x:hidden;
+
+    -webkit-font-smoothing:antialiased;
+
+    text-rendering:optimizeLegibility;
+
+}
+
+/*=========================
+  CONTAINER
+=========================*/
+
+.container{
+
+    max-width:1200px;
+
+}
+
+/*=========================
+  SECTION
+=========================*/
+
+section{
+
+    padding:90px 0;
+
+}
+
+/*=========================
+  IMAGES
+=========================*/
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+/*=========================
+  LINKS
+=========================*/
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    transition:var(--transition);
+
+}
+
+a:hover{
+
+    text-decoration:none;
+
+}
+
+/*=========================
+  LISTS
+=========================*/
+
+ul,
+ol{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+/*=========================
+  HEADINGS
+=========================*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+    font-family:'Poppins', sans-serif;
+
+    font-weight:700;
+
+    color:var(--primary-green);
+
+    line-height:1.3;
+
+    margin-bottom:20px;
+
+}
+
+h1{
+
+    font-size:4rem;
+
+}
+
+h2{
+
+    font-size:2.6rem;
+
+}
+
+h3{
+
+    font-size:1.75rem;
+
+}
+
+h4{
+
+    font-size:1.35rem;
+
+}
+
+h5{
+
+    font-size:1.1rem;
+
+}
+
+h6{
+
+    font-size:1rem;
+
+}
+
+/*=========================
+  PARAGRAPH
+=========================*/
+
+p{
+
+    font-size:1rem;
+
+    color:var(--text);
+
+    line-height:1.9;
+
+    text-align:justify;
+
+    margin-bottom:16px;
+
+}
+
+/*=========================
+  SECTION TITLE
+=========================*/
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.section-title h2{
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    max-width:850px;
+
+    margin:0 auto;
+
+    margin-top:10px;
+}
+
+.section-divider{
+
+    width:90px;
+
+    height:4px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary-green),
+        var(--primary-blue)
+    );
+
+    margin:8px auto 10px;
+
+    border-radius:50px;
+
+}
+/*=========================
+  FORM ELEMENTS
+=========================*/
+
+input,
+textarea,
+select{
+
+    font-family:'Open Sans', sans-serif;
+
+    width:100%;
+
+    padding:12px 15px;
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    outline:none;
+
+    transition:var(--transition);
+
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    border-color:var(--primary-blue);
+
+    box-shadow:0 0 0 3px rgba(11,142,236,.15);
+
+}
+
+/*=========================
+  TABLE
+=========================*/
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+th{
+
+    font-weight:600;
+
+}
+
+/*=========================
+  HORIZONTAL RULE
+=========================*/
+
+hr{
+
+    border:none;
+
+    border-top:1px solid var(--border);
+
+    margin:40px 0;
+
+}
+
+/*=========================
+  UTILITIES
+=========================*/
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.text-left{
+
+    text-align:left;
+
+}
+
+.text-right{
+
+    text-align:right;
+
+}
+
+.text-justify{
+
+    text-align:justify;
+
+}
+
+.text-blue{
+
+    color:var(--primary-blue);
+
+}
+
+.text-green{
+
+    color:var(--primary-green);
+
+}
+
+.bg-light{
+
+    background:var(--light);
+
+}
+
+.rounded{
+
+    border-radius:12px !important;
+
+}
+
+.rounded-lg{
+
+    border-radius:20px !important;
+
+}
+
+.shadow-soft{
+
+    box-shadow:var(--shadow);
+
+}
+
+.w-100{
+
+    width:100%;
+
+}
+
+/*=========================
+  SPACING HELPERS
+=========================*/
+
+.mt-40{
+
+    margin-top:40px;
+
+}
+
+.mb-40{
+
+    margin-bottom:40px;
+
+}
+
+.pt-80{
+
+    padding-top:80px;
+
+}
+
+.pb-80{
+
+    padding-bottom:80px;
+
+}

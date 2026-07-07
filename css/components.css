@@ -1,0 +1,381 @@
+/*==================================================
+  TEC-HEALTH Medical and Diagnostic Center
+  Components Stylesheet
+==================================================*/
+
+/*=========================================
+  NAVIGATION BAR
+=========================================*/
+
+.navbar{
+    background: var(--white);
+    padding:10px 0;
+    transition:all .35s ease;
+    box-shadow:0 2px 15px rgba(0,0,0,.06);
+}
+
+.navbar.scrolled{
+    padding:12px 0;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.logo{
+    height:60px;
+    transition:.3s;
+}
+
+.navbar-brand{
+    display:flex;
+    align-items:center;
+}
+
+.navbar-nav{
+    gap:18px;
+}
+
+.nav-item{
+    display:flex;
+    align-items:center;
+}
+
+.nav-link{
+    font-family:'Poppins', sans-serif;
+    font-size:.95rem;
+    font-weight:600;
+    color:var(--dark) !important;
+    padding:12px 15px !important;
+    position:relative;
+    transition:var(--transition);
+}
+
+/* Hover */
+
+.nav-link:hover{
+    color:var(--primary-blue) !important;
+}
+
+/* Active */
+
+.nav-link.active{
+    color:var(--primary-green) !important;
+}
+
+.nav-link.active::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:6px;
+
+    left:15px;
+
+    width:40%;
+
+    height:3px;
+
+    background:var(--primary-blue);
+
+    border-radius:10px;
+
+}
+
+/*=========================================
+  NAVBAR TOGGLER
+=========================================*/
+
+.navbar-toggler{
+
+    border:none;
+
+    box-shadow:none;
+
+}
+
+.navbar-toggler:focus{
+
+    box-shadow:none;
+
+}
+
+/*=========================================
+  BUTTONS
+=========================================*/
+
+.btn{
+
+    border-radius:50px;
+
+    padding:12px 28px;
+
+    font-family:'Poppins', sans-serif;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+    border:none;
+
+}
+
+.btn-lg{
+
+    padding:12px 28px;
+
+}
+
+/* Primary */
+
+.btn-primary{
+
+    background:var(--primary-blue);
+
+    color:#FFFFFF;
+
+}
+
+.btn-primary:hover{
+
+    background:#0877C7;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(11,142,236,.30);
+
+}
+
+/* Secondary */
+
+.btn-success{
+
+    background:var(--primary-green);
+
+    color:#FFFFFF;
+
+}
+
+.btn-success:hover{
+
+    background:#15542B;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(28,106,55,.25);
+
+}
+
+/* Outline */
+
+.btn-outline{
+
+    background:transparent;
+
+    border:2px solid var(--primary-blue);
+
+    color:var(--primary-blue);
+
+}
+
+.btn-outline:hover{
+
+    background:var(--primary-blue);
+
+    color:#FFFFFF;
+
+}
+
+/*=========================================
+  CARDS
+=========================================*/
+
+.service-card{
+
+    background:#FFFFFF;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:var(--transition);
+
+    height:100%;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.service-card img{
+
+    width:100%;
+
+    height:320px;
+
+    object-fit:cover;
+
+    transition:transform .5s;
+
+}
+
+.service-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.card-content{
+
+    padding:35px;
+
+}
+
+.card-content h3{
+
+    margin-bottom:20px;
+
+    color:var(--primary-green);
+
+}
+
+.card-content p{
+
+    margin-bottom:25px;
+
+}
+
+/* Decorative Top Border */
+
+.service-card::before{
+
+    content:"";
+
+    display:block;
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary-green),
+        var(--primary-blue)
+    );
+
+}
+
+/*=========================================
+  IMAGE CARD
+=========================================*/
+
+.image-card{
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+}
+
+.image-card img{
+
+    transition:transform .5s;
+
+}
+
+.image-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*=========================================
+  ICON BOX
+=========================================*/
+
+.icon-box{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:rgba(11,142,236,.10);
+
+    color:var(--primary-blue);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+/*=========================================
+  BADGES
+=========================================*/
+
+.badge-green{
+
+    display:inline-block;
+
+    background:var(--primary-green);
+
+    color:#FFFFFF;
+
+    padding:6px 14px;
+
+    border-radius:50px;
+
+    font-size:.85rem;
+
+}
+
+.badge-blue{
+
+    display:inline-block;
+
+    background:var(--primary-blue);
+
+    color:#FFFFFF;
+
+    padding:6px 14px;
+
+    border-radius:50px;
+
+    font-size:.85rem;
+
+}
+
+/*=========================================
+  DIVIDER
+=========================================*/
+
+.section-divider{
+
+    width:90px;
+
+    height:4px;
+
+    background:linear-gradient(
+        to right,
+        var(--primary-green),
+        var(--primary-blue)
+    );
+
+    border-radius:20px;
+
+    margin:20px auto 35px;
+
+}

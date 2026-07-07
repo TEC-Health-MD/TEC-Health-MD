@@ -1,0 +1,325 @@
+/*==================================================
+  TEC-HEALTH Medical and Diagnostic Center
+  Why Choose Us Stylesheet
+==================================================*/
+
+
+/*=========================================
+  HERO
+=========================================*/
+
+.why-hero{
+
+    background:url("../../images/hero.png")
+               center center/cover no-repeat;
+
+}
+
+
+
+/*=========================================
+  INTRODUCTION
+=========================================*/
+
+.why-intro{
+
+    padding:80px 0 40px;
+
+    background:#FFFFFF;
+
+}
+
+.why-intro .section-title{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.why-intro p{
+
+    text-align:center;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+
+/*=========================================
+  WHY FEATURES
+=========================================*/
+
+.why-features{
+
+    padding:30px 0 90px;
+
+    background:#FFFFFF;
+
+}
+
+
+
+/*=========================================
+  FEATURE CARD
+=========================================*/
+
+.why-card{
+
+    background:#FFFFFF;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    height:100%;
+
+    display:flex;
+
+    gap:25px;
+
+    align-items:flex-start;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    border-top:5px solid transparent;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-8px);
+
+    border-top:5px solid var(--primary-green);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+
+
+/*=========================================
+  ICON
+=========================================*/
+
+.why-icon{
+
+    width:70px;
+
+    height:70px;
+
+    min-width:70px;
+
+    border-radius:50%;
+
+    background:rgba(11,142,236,.10);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.why-icon i{
+
+    font-size:2rem;
+
+    color:var(--primary-blue);
+
+}
+
+
+
+/*=========================================
+  CARD CONTENT
+=========================================*/
+
+.why-card h3{
+
+    color:var(--primary-green);
+
+    font-size:1.45rem;
+
+    margin-bottom:15px;
+
+}
+
+.why-card p{
+
+    margin-bottom:0;
+
+    text-align:left;
+
+}
+/*=========================================
+  CTA BUTTONS
+=========================================*/
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:35px;
+
+}
+
+.cta-buttons .btn{
+
+    min-width:230px;
+
+}
+
+
+
+/*=========================================
+  CARD ANIMATION
+=========================================*/
+
+.why-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/*=========================================
+  RESPONSIVE
+=========================================*/
+
+@media(max-width:992px){
+
+.why-card{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.why-card p{
+
+text-align:center;
+
+}
+
+.why-icon{
+
+margin:auto;
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+.why-intro{
+
+padding:60px 0 30px;
+
+}
+
+.why-features{
+
+padding-bottom:60px;
+
+}
+
+.why-card{
+
+padding:28px;
+
+}
+
+.why-card h3{
+
+font-size:1.3rem;
+
+}
+
+.cta-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.cta-buttons .btn{
+
+width:100%;
+
+max-width:320px;
+
+}
+
+}
+
+
+
+@media(max-width:576px){
+
+.why-card{
+
+padding:24px;
+
+}
+
+.why-icon{
+
+width:60px;
+
+height:60px;
+
+min-width:60px;
+
+}
+
+.why-icon i{
+
+font-size:1.7rem;
+
+}
+
+.why-card h3{
+
+font-size:1.2rem;
+
+}
+
+}
